@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="googleMap" style="width:100vw;height:400vh;"></div>
+
+<style>
+    html, body{
+        margin: 0px;
+    }
+</style>
+<script>
+function myMap() {
+
+    var mapProp= {
+        center: new google.maps.LatLng(42.616, 21.16),
+        zoom: 15,
+        fullscreenControl: false,
+        disableDefaultUI: true, // a way to quickly hide all controls
+        styles: [
+            {
+                featureType: 'all',
+        elementType: 'labels',
+        stylers: [{ 
+            visibility: 'off' 
+         }]
+            }
+         ]
+    };
+
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+    const trafficLayer = new google.maps.TrafficLayer();
+
+    trafficLayer.setMap(map);
+
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVtsJIdh0VOkTBXGC976DNFiK73ErxlS8&callback=myMap"></script>
+
+</body>
+</html>
