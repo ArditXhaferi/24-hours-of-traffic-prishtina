@@ -16,6 +16,7 @@ function myMap() {
         zoom: 15,
         fullscreenControl: false,
         disableDefaultUI: true, // a way to quickly hide all controls
+        mapTypeId: "coordinate",
         styles: [
             {
                 featureType: 'all',
@@ -24,7 +25,18 @@ function myMap() {
             visibility: 'off' 
          }]
             }
-         ]
+         ],
+         mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDoubleClickZoom: true,
+        draggable: false,
+        scrollwheel: false,
+        panControl: false,
+        disableDefaultUI: true,
+        styles: [{
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }]
     };
 
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
