@@ -13,7 +13,7 @@ options.add_argument('--no-sandbox')
 options.add_argument("--disable-setuid-sandbox")
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
-options.add_argument("--disable-dev-shm-usage");
+options.add_argument("--disable-dev-shm-usage")
 options.add_argument("enable-automation")
 options.add_argument("--window-size=1920,1080")
 options.add_argument("--disable-extensions")
@@ -25,7 +25,7 @@ now = datetime.now()
 dt_string = now.strftime("%d-%m-%Y %H:%M")
 
 # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), chrome_options=options, desired_capabilities=caps)
-driver = webdriver.Chrome("./chromedriver", chrome_options=options)
+driver = webdriver.Chrome(executable_path="./chromedriver", chrome_options=options)
 
 print('test')
 driver.get('http://127.0.0.1:8080/index.html')
