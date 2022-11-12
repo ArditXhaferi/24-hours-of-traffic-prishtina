@@ -27,8 +27,8 @@ def delete(path):
     time.sleep(.1)
 
 time.sleep(5)
-# driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
-driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver", chrome_options=options)
+driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+#driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver", chrome_options=options)
 
 print('test')
 driver.get('http://127.0.0.1:8080/index.html')
