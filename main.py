@@ -30,7 +30,7 @@ def delete(path):
 driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver", chrome_options=options)
 
 
-driver.get('http://127.0.0.1:5500/index.html')
+driver.get('http://127.0.0.1:8080/index.html')
 
 
 # element = driver.find_element_by_xpath("/html/body/c-wiz/div/div/div/div[2]/div[1]/div[3]/div[1]/div[1]/form[2]/div/div/button")
