@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 import time
 from datetime import datetime
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 
 options = Options()
 options.add_argument('--no-sandbox')
@@ -27,7 +28,7 @@ def delete(path):
     time.sleep(.1)
 
 time.sleep(5)
-driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), chrome_options=options)
 #driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver", chrome_options=options)
 
 print('test')
