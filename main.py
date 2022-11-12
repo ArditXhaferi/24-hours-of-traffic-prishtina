@@ -55,7 +55,7 @@ import requests
 import urllib.parse
 
 BASE = 'https://mini.s-shot.ru/1024x0/JPEG/1024/Z100/?' # you can modify size, format, zoom
-url = 'http://127.0.0.1:8080/index.html'#or whatever link you need
+url = 'http://164.92.238.129:8080/'#or whatever link you need
 url = urllib.parse.quote_plus(url) #service needs link to be joined in encoded format
 print(url)
 
