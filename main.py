@@ -6,6 +6,8 @@ from datetime import datetime
 from selenium.webdriver.chrome.options import Options
 
 options = Options()
+options.add_argument('--no-sandbox')
+options.add_argument('--headless')
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 options.add_argument('--window-size=900, 900')  # Last I checked this was necessary.
