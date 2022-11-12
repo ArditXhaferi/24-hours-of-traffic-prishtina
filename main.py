@@ -37,7 +37,7 @@ print('tes2')
 
 # element.click()
 
-time.sleep(2)
+time.sleep(10)
 
 
 driver.save_screenshot(f'./images/{dt_string}.png')
