@@ -12,7 +12,7 @@ options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 options.add_argument('--window-size=900, 900')  # Last I checked this was necessary.
 options.add_argument("--disable-dev-shm-usage")
-options.add_argument('--user-data-dir=~/.config/google-chrome')
+options.add_argument('--user-data-dir=~/.config/google-chrome/default')
 
 now = datetime.now()
 dt_string = now.strftime("%d-%m-%Y %H:%M")
