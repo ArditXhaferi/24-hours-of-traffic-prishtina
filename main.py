@@ -37,6 +37,6 @@ driver.get('http://127.0.0.1:5500/index.html')
 time.sleep(10)
 
 
-driver.save_screenshot(f'/Users/arditxhaferi/Documents/Projects/Google-Maps-Clean-Screenshot/images/{dt_string}.png')
+driver.save_screenshot(f'./images/{dt_string}.png')
  
 driver.quit()
